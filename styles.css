@@ -1,0 +1,72 @@
+
+
+h1 {
+  font-size: 6vh;
+  position: relative;
+  top: 47vh;
+  font-family: Arial;
+}
+
+.controls {
+  position: relative;
+  top: 100px;
+}
+
+.splash{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: 200;
+  color: white;
+  text-align: center;
+  line-height; 90vh;
+}
+
+.splash.display-none{
+  
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: -10;
+  color: white;
+  text-align: center;
+  line-height; 90vh;
+}
+
+@keyframes fadeOut {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.fade-in{
+  opacity: 0;
+  animation: fadeIn 3s ease-in forwards;
+}
+
+.fade-out{
+  opacity: 1;
+  animation: fadeIn 3s ease-in forwards;
+}
